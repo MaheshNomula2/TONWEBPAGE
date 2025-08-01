@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: #f8fafd;
+    color: #222;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-weight: 600;
+    margin-right: 10px;
+    letter-spacing: 0.5px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #3780e5 !important;
+}
+
+/* Hero */
+.hero {
+
+    background: linear-gradient(90deg, #3780e5 0, #72b4fa 100%);
+    color: #fff;
+    padding: 80px 0 60px;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.hero .btn {
+    margin-top: 25px;
+    padding: 14px 37px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Logo Bar */
+.logo-bar {
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(55, 128, 229, 0.045);
+    padding: 30px 0 18px;
+}
+
+.logo-bar img {
+    height: 48px;
+    width: auto;
+    max-width: 160px;
+    margin: 0 16px 14px 16px;
+    filter: grayscale(60%);
+    opacity: 0.85;
+    transition: transform .2s, filter .2s;
+}
+
+.logo-bar img:hover {
+    transform: scale(1.08);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Services Section */
+#services {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.service-box {
+    transition: box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    box-shadow: 0 6px 20px rgba(55, 128, 229, 0.3);
+}
+
+.service-img {
+    width: 96px;
+    height: 100px;
+    margin-bottom: 1.5rem;
+}
+
+/* Section styling */
+.section {
+    padding: 64px 0;
+    background: #f4f7ff;
+}
+
+.section.bg-light {
+    background: #f9fafc;
+}
+
+.section h2 {
+    font-weight: 700;
+    color: #3780e5;
+    margin-bottom: 16px;
+}
+
+.section p {
+    font-size: 1.13rem;
+    line-height: 1.7;
+    color: #343a40;
+}
+
+.section ul {
+    font-size: 1.06rem;
+    padding-left: 0;
+}
+
+.section ul li {
+    margin-bottom: 7px;
+    list-style: none;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.portfolio-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+}
+
+.portfolio-img {
+    width: 100%;
+    object-fit: cover;
+    height: 280px;
+}
+
+/* About & Features img */
+.about-img {
+    max-width: 410px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(55, 128, 229, 0.08);
+}
+
+.feature-img {
+    max-width: 96px;
+    height: auto;
+}
+
+/* Video Section */
+.video-section {
+    background: #fff;
+}
+
+.video-section .ratio {
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 6px 28px rgba(55, 128, 229, 0.13);
+}
+
+.video-section h2 {
+    margin-bottom: 28px;
+}
+
+/* Contact CTA */
+.contact-section {
+    background: #e9f2fa;
+    padding-bottom: 54px;
+}
+
+.contact-section .btn {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: #212529;
+    color: #eee;
+    font-size: 1rem;
+    text-align: center;
+    padding: 32px 0 20px;
+}
+
+@media (max-width: 991px) {
+    .hero {
+        padding: 54px 0 38px;
+    }
+
+    .about-img {
+        max-width: 320px;
+    }
+
+    .logo-bar img {
+        height: 34px;
+        max-width: 110px;
+        margin: 7px 8px 10px 8px;
+    }
+
+    .section {
+        padding: 38px 0;
+    }
+}
+
+/* Responsive utilities for mobile */
+@media (max-width: 767px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 1.42rem;
+    }
+}
